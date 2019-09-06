@@ -1,0 +1,31 @@
+Formularios:
+	FrmIngreso:
+		Empleado
+		> Nombre
+		> Sueldo
+		> Premio (%)
+		> Salario por familiar
+		Botones
+		> Salir
+		> Limpiar
+		> Siguiente (FrmDescuento)
+	FrmDescuento
+		Empleado
+		> Descuento ((sueldo + premio) * 0.2)
+		> Total a cobrar (sueldo + premio + salario - descuento)
+		Botones
+		> Atras/Cancelar (FrmIngreso)
+		> Siguiente (FrmRecibo)
+	FrmRecibo
+		Empleado
+		> Nombre
+		> Sueldo
+		> Premio
+		> Salario
+		> Descuento
+		> Total a cobrar
+		Botones
+		> Volver al principio
+Detalles
+	> Todos los formularios centrados
+	> Despues de volver desde FrmRecibo, los campos deben estar vacíos
